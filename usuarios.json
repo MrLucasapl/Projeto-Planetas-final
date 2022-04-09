@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "usuario": "administrador",
+      "senha": "321"
+    },
+    {
+      "usuario": "administrador2",
+      "senha": "123"
+    }
+  ]
+}

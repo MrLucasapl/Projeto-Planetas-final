@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/descricaoPlaneta.css">
+    <title> Planetas </title>
+</head>
+
+<body>
+    <div class="fundo-estrelas">
+        <header>
+            <div class="caixa-logo">
+                <img class="logo" src="/img/Logo@2x.png" alt="imagem do logo">
+            </div>
+
+            <nav id="nav">
+                <div class="caixa-menu">
+                    <img class="logousuario" src="/img/person_black_24dp (1)@2x.png" alt="imagem usuario">
+                    Usuário
+                    <img class="logousuario" src="/img/Arrow@2x.png" alt="imagem de opcão">
+                </div>
+                <ul id="menu">
+                    <li><a href="../html/home.html">Minha conta</a></li>
+                    <li><a href="../html/login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <section class="caixa-voltar">
+                <a class="link-voltar" href="./planetas.html">
+                    <img src="/img/Caminho 468@2x.png" alt="seta para esqueda">
+                    <p>Home/</p>
+                    <p>Planetas/</p><span>Explorar Planeta</span>
+                </a>
+            </section>
+
+            <section class="container-pai">
+
+                <div id="caixa-img-planetas">
+                    <img class="seta" src="/img/Caminho 464@2x.png" alt="seta esquerda">
+                    <img id="imgplaneta" src="" alt="planeta">
+                    <img class="seta" src="/img/Caminho 465@2x.png" alt="seta direita">
+                </div>
+
+                <div id="caixa-info">
+                    <div class="caixa-nome-planeta">
+                        <p>PLANETA</p>
+                        <h2 id="nome"></h2>
+                        <span></span>
+                    </div>
+
+                    <div class="caixa-descricao-planeta">
+                        <p id="descricao"></p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container-caixas">
+
+                <div class="caixas-dados">
+                    <strong>Área de superfície</strong>
+                    <p id="area"></p>
+                </div>
+                <div class="caixas-dados">
+                    <strong>Distância do sol</strong>
+                    <p id="distacia"></p>
+                </div>
+                <div class="caixas-dados">
+                    <strong>Duração do dia</strong>
+                    <p id="duracao"></p>
+                </div>
+                <div class="caixas-dados">
+                    <strong>Gravidade</strong>
+                    <p id="gravidade"></p>
+                </div>
+
+            </div>
+
+            <div class="container-painel-editavel">
+                <h4>Editar planeta</h4>
+
+                <form id="form-dados" onsubmit="">
+                    <div id="container-form">
+                        <div class="form-nome-area">
+                            <input type="text" id="input-nome" placeholder="Nome do planeta" required>
+                            <input type="text" id="input-area" placeholder="Área da superfície" required>
+                        </div>
+                        <div class="form-descricao">
+                            <input type="text" id="input-descricao" placeholder="Descrição do planeta" required>
+                        </div>
+                    </div>
+                    <div class="form-distancia-duracao-gravidade">
+                        <input type="text" id="input-distancia" placeholder="Distância do Sol" required>
+
+                        <input type="text" id="input-duracao" placeholder="Duração do dia" required>
+
+                        <input type="text" id="input-gravidade" placeholder="Gravidade" required>
+                    </div>
+                    <div class="buttons-cancelar-salvar">
+                        <button type="btn-reset" onclick="cancelarEdicao()" value="Cancelar" id="form-botao-cancel">Cancelar</button>
+
+                        <button type="button" value="Salvar" id="form-botao-salvar">Salvar</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+    </div>
+</body>
+<script type="text/javascript" src="../Dados.js"></script>
+<script type="text/javascript" src="../js/descricaoPlaneta.js"></script>
+
+<script>
+    function init() {
+        diretorio();
+        pegarParametro();
+        sliderCardes()
+    }
+</script>
+
+</html>

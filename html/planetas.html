@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/planetas.css">
+    <title> Planetas </title>
+</head>
+
+<body>
+    <div class="fundo-estrelas">
+        <header>
+            <div>
+                <div class="caixa-logo">
+                    <img class="logo" src="/img/Logo@2x.png" alt="imagem do logo">
+                </div>
+            </div>
+
+            <nav id="nav">
+                <div class="caixa-menu">
+                    <img class="logousuario" src="/img/person_black_24dp (1)@2x.png" alt="imagem usuario">
+                    Usuário
+                    <img class="logousuario" src="/img/Arrow@2x.png" alt="imagem de opcão">
+                </div>
+                <ul id="menu">
+                    <li><a href="../html/home.html">Minha conta</a></li>
+                    <li><a href="../html/login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="caixa-voltar">
+                <a class="link-voltar" href="./home.html">
+                    <img src="/img/Caminho 468@2x.png" alt="seta para esqueda">
+                    <p>Home/</p>
+                    <span>Planetas</span>
+                </a>
+            </section>
+
+            <div class="filtro">
+                <h2>Filtrar planetas</h2>
+                <div class="caixa-inputs">
+
+                    <div class="caixa-buscar">
+                        <label for="buscar" class="buscar">
+                            <img class="img-input" src="../img/lupa.png" alt="imagem da carta">
+                            <input id="buscar" class="buscar" type="text" placeholder="Pesquisar planeta...">
+                        </label>
+                    </div>
+
+                    <div class="label-float">
+                        <select class="menu" onclick="verificaMenuOpicaoUm()">
+                            <option value="0" selected></option>
+                            <option value="1">Área de superfície</option>
+                            <option value="2">Distância do sol</option>
+                            <option value="3">Duração do dia</option>
+                            <option value="4">Gravidade</option>
+                        </select>
+                        <label class="efeito-label">Selecione um filtro</label>
+                    </div>
+
+                    <div class="label-float">
+                        <select class="menu" onclick="verificaMenuOpicaoDois()">
+                            <option value="0" selected></option>
+                            <option value="1">Filtrar do maior ao menor</option>
+                            <option value="2">Filtrar do menor ao maior</option>
+                        </select>
+                        <label class="efeito-label">Selecione um filtro</label>
+                    </div>
+
+                    <button id="botaoFiltro" onclick="filtroCardes(data)" type="button">FILTRAR</button>
+
+                </div>
+            </div>
+            <div id="grupo-cardes">
+
+                <a href="/html/addPlanetas.html">
+                    <div class="adicionar-card">
+                        <img class="img-adicionar-card" src="/img/Caminho 261@2x.png" alt="imagem de adicionar">
+                        <span>Adicionar</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="caixa-tabela">
+                <h2>Tabela comparativa</h2>
+            </div>
+
+
+        </main>
+
+        <div class="fundo-modal">
+            <div class="modal">
+                <div class="img-fundo">
+                    <img class="img-modal" src="/img/planeta-modal (1).png" alt="imagem do planeta">
+                </div>
+                <div class="modal-txt">
+                    <h3>Tem certeza?</h3>
+                    <p>
+                        Ao pressionar em <strong>deletar</strong> todos os dados desse planeta serão apagados dos
+                        sistema
+                        <strong>permanentemente!</strong> Deseja apagar todos os dados?
+                    </p>
+                </div>
+                <div class="caixa-botao-modal">
+                    <button id="voltar" type="button" onclick="voltar()">VOLTAR</button>
+                    <button id="deletar" type="button">DELETE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../Dados.js"></script>
+<script type="text/javascript" src="../js/planetasEfeitos.js"></script>
+<script type="text/javascript" src="../js/planetas.js"></script>
+<script>
+    function init() {
+        verificaMenuOpicaoUm();
+        verificaMenuOpicaoDois();
+        sliderCardes();
+        diretorio();
+        listaDados(data);
+        planetasCardes(data);
+        tabelaCorporativa(data);
+    }
+</script>
+
+</html>
