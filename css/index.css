@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     background-image: url("../img/1920x1080@2x.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,14 +39,14 @@ main {
 
 h1 {
     color: #FFFFFF;
-    font-size: max(50px, 1.2vw);
+    font-size: max(50px, 4.2vw);
     font-weight: 500;
     padding: 8px 0px;
 }
 
 #mao {
-    width: 73px;
-    height: 74px;
+    width: 91px;
+    height: 92px;
 }
 
 p {
@@ -59,7 +59,7 @@ p {
 .txt-RocketTalents {
     color: #5799A0;
     font-size: max(15px, 2vw);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 #linha {
@@ -79,7 +79,7 @@ p {
     height: 80%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 987px) {
 
     .posicao-caixa {
         flex-wrap: wrap;
@@ -104,56 +104,43 @@ p {
         height: 100%;
     }
 
+    h1 {
+        font-size: max(32px, 8vw);
+        padding: 15px 0px;
+    }
+
+    p {
+        font-size: max(25px, 6vw);
+        padding: 15px 0px;
+    }
+
+    .txt-RocketTalents {
+        font-size: max(15px, 4vw);
+    }
+
     #mao {
-        width: 45px;
-        height: 37px;
-    }
-
-    h1 {
-        font-size: max(32px, 1vw);
-        padding: 15px 0px;
-    }
-
-    p {
-        font-size: max(25px, 3vw);
-        padding: 15px 0px;
+        width: 91px;
+        height: 92px;
     }
 
 }
-@media (max-width: 568px){
 
-    h1 {
-        font-size: max(20px, 1vw);
+@media (max-width: 320px) {
+    #mao {
+        width: 71px;
+        height: 72px;
     }
-
-    p {
-        font-size: max(15px, 3vw);
-    }
-
-    main {
-        width: 100%;
-    }
-}
-
-@media (max-width: 215px) {
 
     #linha {
-        left: -75%;
-        top: -1%;
-        width: 100%;
-        height: 20%;
-    }
-
-    .caixa-astronauta {
-        position: relative;
-        top: -25%;
-        height: 40%;
+        display: none;
     }
 
     #astronauta {
-        left: -10%;
-        width: 100%;
-        height: 100%;
+        display: none;
+    }
+
+    .posicao-caixa {
+        padding: 0px;
     }
 
 }
