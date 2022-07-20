@@ -5,9 +5,12 @@ function verificaMenuOpicaoUm() {
     const filtro1 = document.getElementsByClassName('menu')[0].value;
 
     if (filtro1 > 0) {
-        document.querySelectorAll('.efeito-label')[0].style.marginTop = "-6px";
-        document.querySelectorAll('.efeito-label')[0].style.background = "linear-gradient(rgba(18, 20, 25, 0.301), #2A2A2A)";
+        document.querySelectorAll('.efeito-label')[0].style.marginTop = "-16px";
+        document.querySelectorAll('.efeito-label')[0].style.border = "none";
+        document.querySelectorAll('.label-float')[0].style.border = "2px solid #CDCDCD";
+        document.querySelectorAll('.efeito-label')[0].style.background = "linear-gradient(0deg, rgba(42,42,42,1) 57%, rgba(25,25,38,0) 71%)";
     } else {
+        document.querySelectorAll('.label-float')[0].style.border = "none";
         document.querySelectorAll('.efeito-label')[0].style.marginTop = "14px";
         document.querySelectorAll('.efeito-label')[0].style.background = "none";
     }
@@ -18,9 +21,11 @@ function verificaMenuOpicaoDois() {
     const filtro2 = document.getElementsByClassName('menu')[1].value;
 
     if (filtro2 > 0) {
-        document.querySelectorAll('.efeito-label')[1].style.marginTop = "-6px";
-        document.querySelectorAll('.efeito-label')[1].style.background = "linear-gradient(rgba(18, 20, 25, 0.301), #2A2A2A)";
+        document.querySelectorAll('.efeito-label')[1].style.marginTop = "-16px";
+        document.querySelectorAll('.label-float')[1].style.border = "2px solid #CDCDCD";
+        document.querySelectorAll('.efeito-label')[1].style.background = "linear-gradient(0deg, rgba(42,42,42,1) 57%, rgba(25,25,38,0) 71%)";
     } else {
+        document.querySelectorAll('.label-float')[1].style.border = "none";
         document.querySelectorAll('.efeito-label')[1].style.marginTop = "14px";
         document.querySelectorAll('.efeito-label')[1].style.background = "none";
     }

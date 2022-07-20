@@ -51,11 +51,10 @@ header {
 }
 
 .caixa-menu {
+    height: 96px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    margin-top: 20%;
     font-size: max(15px, 1vw);
 }
 
