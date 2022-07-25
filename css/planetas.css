@@ -65,6 +65,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: max(15px, 1vw);
+    cursor: pointer;
 }
 
 .caixa-menu.active #menu {
@@ -228,13 +229,6 @@ input::placeholder {
     color: #CDCDCD;
     background-color: #2A2A2A;
 }
-/* 
-option:hover{
-    height: 37px;
-    border: none;
-    color: #2A2A2A;
-    background-color: #CDCDCD;
-} */
 
 .label-float select:focus {
     width: 100%;
@@ -490,6 +484,9 @@ a {
 
 @media (max-width: 920px) {
 
+    .filtro{
+        height: 100%;
+    }
 
     #grupo-cardes {
         display: grid;

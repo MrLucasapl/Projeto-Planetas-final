@@ -122,6 +122,7 @@ button {
     width: 80%;
     height: 45px;
     font-size: max(12px, 0.5vw);
+    cursor: pointer;
 }
 
 .caixa-texto {
